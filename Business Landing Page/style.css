@@ -1,16 +1,26 @@
+:root{
+    --primary-color: #013a23;
+    --secondary-color: #9ad432;
+    --light-color: #ebf1db;
+    --tertiary-color1: #fff20d;
+    --tertiary-color2: #bf2a1d;
+}
+
 *{
     margin: 0;
     padding: 0;
 }
 
 body{
-    background-color: #f1f1f1;
+    background-color: var(--light-color);
     font-family: arial;
     font-size: 16px;
 }
 
+/* HEADER */
+
 .nav-main{
-    position: fixed;
+    position:fixed;
     top: 0;
     width: 100%;
     height: 60px;
@@ -31,7 +41,7 @@ body{
 .btn-toggle-nav{
     width: 60px;
     height: 100%;
-    background-color: #f98f39;
+    background-color: var(--secondary-color);
     display: grid;
     place-content: center;
     cursor: pointer;
@@ -62,11 +72,13 @@ body{
     color: #111;
 }
 
+/* SIDEBAR */
+
 .nav-sidebar{
     position: fixed;
     left: 0;
     bottom: 0;
-    width: 50px;
+    width: 0px;
     height: calc(100vh - 60px);
     padding: 0 5px;
     background-color: #1b1b1b;
@@ -101,4 +113,93 @@ body{
 .nav-sidebar ul li a:hover{
     background-color: #222;
 }
+
+/* MAIN */
+
+main{
+    position: relative;
+}
+
+.hero{
+    position: absolute;
+    top: 50px;
+    
+    /* margin-top: 50px; */
+}
+
+/* MAIN */
+
+.blanks{
+    border: 2px solid black;
+    width: 15rem;
+    height: 15rem;
+    background: linear-gradient(to bottom right, rgb(146, 144, 144), rgb(20, 0, 0));
+}
+
+.grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    place-content: center;
+}
+
+/* ||FOOTER */
+
+footer{
+    background-color: var(--primary-color);
+    color: #fff;
+}
+
+.footer-grid{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.author{
+    display: flex;
+    flex-direction: column;
+}
+
+footer .footer-grid nav{
+    display: flex;
+    flex-direction: column;
+}
+
+footer .footer-grid nav ul li{
+    list-style: none;
+}
+
+footer .footer-grid nav ul li a{
+    text-decoration: none;
+    color: #fff;
+}
+
+.socials-icon{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.fab{
+    font-size: 24px;
+    color: #f4f4f4;
+    cursor: pointer;
+}
+
+.fa-github:hover{
+    color: black;
+}
+
+.fa-facebook:hover{
+    color: rgb(6, 127, 226);
+}
+
+.fa-instagram:hover{
+    color: purple;
+}
+
+.fa-twitter:hover{
+    color: #047aed;
+}
+
+
 
