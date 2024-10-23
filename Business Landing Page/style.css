@@ -74,6 +74,10 @@ a{
     place-content: center;
     cursor: pointer;
     visibility: hidden;
+
+    position: absolute;
+    top: 0;
+    right: 0;
 }
 
 .btn-toggle-nav:hover{
@@ -362,20 +366,26 @@ footer{
     background-color: var(--primary-color);
     color: #fff;
     padding: 2rem;
-    display: flex;
-    justify-content: space-evenly;
     font-size: 1rem;
+    display: flex;
+    flex-direction: column;
 }
 
-footer nav{
+.footer-flex{
+    display: flex;
+    justify-content: space-evenly;
+    padding: 1rem 0;
+}
+
+.footer-flex nav{
     padding: 0 1rem;
 }
 
-footer nav ul li{
+.footer-flex nav ul li{
     list-style: none;
 }
 
-footer nav ul li a{
+.footer-flex nav ul li a{
     text-decoration: none;
     color: #fff;
     white-space: nowrap;
@@ -385,7 +395,7 @@ footer nav ul li a{
     transition-timing-function: linear;
 }
 
-footer nav ul li a:hover{
+.footer-flex nav ul li a:hover{
     color: var(--tertiary-color2);
 } 
 
@@ -412,6 +422,13 @@ footer nav ul li a:hover{
 
 .fa-twitter:hover{
     color: #047aed;
+}
+
+.rights-shi{
+    border-top: 3.5px solid rgba(179, 179, 179, 0.5);
+    padding: .7rem 0;
+    display: grid;
+    place-content: center;
 }
 
 /* ||SMALL LAPTOPS */
@@ -482,9 +499,10 @@ footer nav ul li a:hover{
     .testimonial-grid{
         display: flex;
         flex-direction: column;
+        padding: .5rem;
     }
 
-    footer{
+    .footer-flex{
         display: flex;
         flex-direction: column;
         justify-content: flex-start;
@@ -493,5 +511,7 @@ footer nav ul li a:hover{
     .social-icons{
         display: grid;
         place-content: center;
+        grid-template-columns: repeat(3, 1fr);
+        gap: .5rem;
     }
 }
