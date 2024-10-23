@@ -9,6 +9,7 @@
 *{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 body{
@@ -238,6 +239,7 @@ a{
 
 .why-us-grid{
     display: grid;
+    place-content: center;
     gap: 2rem;
     grid-template-columns: repeat(2, 1fr);
 }
@@ -414,5 +416,82 @@ footer nav ul li a:hover{
 
 /* ||SMALL LAPTOPS */
 @media screen and (max-width: 1024px) {
+    .px-main{
+        padding: 0 6rem;
+    }
     
+    .testimonial-sect{
+        padding: 0 3rem;
+    }
+}
+
+/* ||TABLETS */
+@media screen and (max-width: 820px) {
+    .px-main{
+        padding: 0 2.3rem;
+    }
+
+    .testimonial-sect{
+        padding: 1.5rem;
+    }
+
+    .testimonial-grid{
+        grid-template-areas: 
+            'one two'
+            'three three'
+            'four five';
+    }
+}
+
+/* ||SMALLER TABLETS */
+@media screen and (max-width: 641px) {
+    .btn-toggle-nav{
+        visibility: visible;
+    }
+
+    .nav-main ul {
+        visibility: hidden;
+    }
+
+    .px-main{
+        padding: 0 1.5rem;
+    }
+
+    .blanks-grid{
+        display: flex;
+        flex-wrap: wrap;
+    }
+}
+
+/* ||MOBILE DEVICES */
+@media screen and (max-width: 546px) {
+    .px-main{
+        padding: 0 .5rem;
+    }
+
+    .blanks-grid{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .why-us-grid{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .testimonial-grid{
+        display: flex;
+        flex-direction: column;
+    }
+
+    footer{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+
+    .social-icons{
+        display: grid;
+        place-content: center;
+    }
 }
