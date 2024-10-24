@@ -19,7 +19,7 @@ let toggleNav = function() {
     toggleNavStatus = true
 
     } else if (toggleNavStatus == true) {
-        getSidebar.style.width = "50px"
+        getSidebar.style.width = "0px"
 
         let arrayLength = getSidebarLinks.length;
         for (let i = 0; i < arrayLength; i++) {
