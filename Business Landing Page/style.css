@@ -31,7 +31,7 @@ a{
 }
 
 .px-main{
-    padding: 0 10rem;
+    padding: 0 20rem;
 }
 
 .heading-h2{
@@ -160,17 +160,7 @@ a{
 /* MAIN */
 
 .hero{
-    background-image: url(./Hero-banner.jpg);
-    background-size: cover;
-    height: 500px;
-    display: flex;
-    flex-direction: column;
-   text-align: 10%;
-    justify-content: center;
-    gap: 10px;
-    margin: 0;
-    color: rgb(251, 251, 251);
-    padding: 300px;
+    margin: 50px 0 0 0;
 }
 
 /* ABOUT */
@@ -202,10 +192,8 @@ a{
 
 .services-scroll{
     display: flex;
-    flex-direction: row;
     overflow-x: scroll;
-    align-items: center;
-    /* margin: 2rem 0 0 0; */
+    margin: 2rem 0 0 0;
 }
 
 .services-scroll-content{
@@ -213,19 +201,13 @@ a{
     min-width: 15rem;
     margin: 0 1rem;
     text-align: center;
-    justify-content: center;
     background: linear-gradient(to bottom right, rgb(146, 144, 144), rgb(20, 0, 0));
 
-}
-.square{
-    width: 240px;
-    height: 240px;
-    
 }
 
 /* PACKAGES */
 
-.grid{
+.blanks-grid{
     display: grid;
     gap: 2rem;
     grid-template-columns: repeat(2, 1fr);
@@ -235,7 +217,7 @@ a{
 }
 
 .blanks{
-    min-height: rem;
+    min-height: 15rem;
     background: linear-gradient(to bottom right, rgb(197, 110, 110), rgb(20, 0, 0));
 
     transition: all;
@@ -249,7 +231,6 @@ a{
 
 .blanks:nth-child(1){
     grid-area: one;
-    
 }
 
 .blanks:nth-child(2){
@@ -259,14 +240,6 @@ a{
 .blanks:nth-child(3){
     grid-area: three;
 }
-
-.grid .blanks img{
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-
-
 
 /* WHY US */
 
@@ -286,7 +259,7 @@ a{
 /* FACTS */
 
 .bckgrnd{
-    background-image: url("https://res.cloudinary.com/dyqcnya5b/image/upload/v1729743825/facts-image_qiyu2k.png");
+    background-image: url("/Logo Assets/facts-image.png");
     background-size: cover;
     padding: 2rem;
 }
