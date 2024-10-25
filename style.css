@@ -1,0 +1,206 @@
+root {
+    --primary-color: #013a23;
+    --secondary-color: #9ad432;
+    --light-color: #ebf1db;
+    --tertiary-color1: #fff20d;
+    --tertiary-color2: #bf2a1d;
+  }
+  
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    background-color: var(--light-color);
+    font-family: karla;
+    font-size: 1.2rem;
+    line-height: 1.8rem;
+  }
+  
+  a {
+    text-decoration: none;
+    color: #1b1b1b;
+  }
+  
+  .mx-auto {
+    margin: 0 auto;
+  }
+  
+  .px-main {
+    padding: 0 20rem;
+  }
+  
+  .heading-h2 {
+    font-weight: 500;
+    padding: .5rem 0;
+    margin: 1.5rem auto;
+    border-bottom: 3px solid var(--primary-color);
+    width: fit-content;
+  }
+  
+  .white {
+    color: #ffffff;
+  }
+  
+  /* HEADER */
+  .nav-main {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 60px;
+    background-color: #fff;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    z-index: 1000;
+  }
+  
+  .header-logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 0 0 2rem;
+  }
+  
+  .btn-toggle-nav {
+    width: 60px;
+    height: 100%;
+    background-color: var(--secondary-color);
+    display: grid;
+    place-content: center;
+    cursor: pointer;
+    visibility: hidden;
+  }
+  
+  .btn-toggle-nav:hover {
+    opacity: 0.7;
+  }
+  
+  .nav-main ul {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 1rem;
+  }
+  
+  .nav-main ul li {
+    list-style: none;
+    line-height: 60px;
+  }
+  
+  .nav-main ul li a {
+    display: block;
+    height: 100%;
+    padding: 0 10px;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #111;
+    transition: all;
+    transition-duration: .1s;
+    transition-timing-function: linear;
+  }
+  
+  .nav-main ul li a:hover {
+    color: var(--tertiary-color2);
+    font-size: 1.3rem;
+  }
+  
+  /* SIDEBAR */
+  .nav-sidebar {
+    position: fixed;
+    left: -10px;
+    bottom: 0;
+    width: 0;
+    height: calc(100vh - 60px);
+    padding: 0 5px;
+    background-color: #1b1b1b;
+    z-index: 1000;
+    transition: all;
+    transition-duration: .3s;
+    transition-timing-function: ease-in-out;
+  }
+  
+  .nav-sidebar ul {
+    padding-top: 15px;
+    overflow: hidden;
+    visibility: hidden;
+  }
+  
+  .nav-sidebar ul li {
+    line-height: 60px;
+    list-style: none;
+  }
+  
+  .nav-sidebar ul li span,
+  .nav-sidebar ul li a {
+    display: block;
+    height: 60px;
+    padding: 0 10px;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #fff;
+    white-space: nowrap;
+    opacity: 0;
+  }
+  
+  .nav-sidebar ul li a:hover {
+    background-color: #222;
+  }
+  
+  /* FOOTER */
+  footer {
+    background-color: var(--primary-color);
+    color: #fff;
+    padding: 2rem;
+    display: flex;
+    justify-content: space-evenly;
+    font-size: 1rem;
+  }
+  
+  footer nav {
+    padding: 0 1rem;
+  }
+  
+  footer nav ul li {
+    list-style: none;
+  }
+  
+  footer nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    white-space: nowrap;
+    transition: all;
+    transition-duration: .1s;
+    transition-timing-function: linear;
+  }
+  
+  footer nav ul li a:hover {
+    color: var(--tertiary-color2);
+  }
+  
+  .social-icons {
+    display: flex;
+  }
+  
+  .fab {
+    font-size: 24px;
+    color: #f4f4f4;
+    cursor: pointer;
+    padding: 0 .5rem;
+  }
+  
+  .fa-facebook:hover {
+    color: rgb(6, 127, 226);
+  }
+  
+  .fa-instagram:hover {
+    color: transparent;
+    background: linear-gradient(to bottom right, rgb(158, 0, 158), rgb(228, 228, 31));
+    background-clip: text;
+  }
+  
+  .fa-twitter:hover {
+    color: #047aed;
+  }
+  
