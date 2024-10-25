@@ -160,7 +160,7 @@ a{
 /* MAIN */
 
 .hero{
-    margin: 50px 0 0 0;
+    margin: 20px 0 0 0;
 }
 
 /* ABOUT */
@@ -205,6 +205,12 @@ a{
 
 }
 
+.cont{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
 /* PACKAGES */
 
 .blanks-grid{
@@ -241,6 +247,12 @@ a{
     grid-area: three;
 }
 
+.blank-cont{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
 /* WHY US */
 
 .why-us-grid{
@@ -259,7 +271,7 @@ a{
 /* FACTS */
 
 .bckgrnd{
-    background-image: url("/Logo Assets/facts-image.png");
+    background-image: url(https://res.cloudinary.com/dyqcnya5b/image/upload/v1729743825/facts-image_qiyu2k.png);
     background-size: cover;
     padding: 2rem;
 }
