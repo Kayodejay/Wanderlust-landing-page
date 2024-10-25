@@ -259,7 +259,7 @@ a{
 /* FACTS */
 
 .bckgrnd{
-    background-image: url("/Logo Assets/facts-image.png");
+    background-image: url(https://res.cloudinary.com/dyqcnya5b/image/upload/v1729743825/facts-image_qiyu2k.png);
     background-size: cover;
     padding: 2rem;
 }
