@@ -1,0 +1,261 @@
+.describe{
+    width: 700px;
+}
+
+.bold{
+    font-weight: bold;
+    width: 300px;
+
+}
+
+#container{
+    display: flex;
+    justify-content: center;
+}
+
+
+
+.spots{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+section {width: 100%; height: auto;}
+
+
+.section-form {
+    width: 100%;
+    height: 100%;
+    background-image: url(../images/bahia.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.container {
+    margin: 0 auto;
+    padding: 50px 0;
+    width: 100%;
+}
+.area-form {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    width: 80%;
+    padding: 30px 25px 20px 20px;
+    background: #fafafa;
+}
+.sub-form {
+    font-size: 1.2rem;
+    margin-bottom: 14px;
+    justify-content: center;
+}
+
+.topo-form,.select {
+    height: 32px;
+    width: 100%;
+    margin: 10px 0;
+    padding: 0 5px;
+}
+.grouping {width: 100%;}
+
+.mark input[type=checkbox] + label:before {
+    content: "\2713";
+}
+
+.d-flex {
+    display: flex;
+    width: 100%;
+    margin: 0 auto;
+}
+
+
+
+:root{
+    --primary-color: #013a23;
+    --secondary-color: #9ad432;
+    --light-color: #ebf1db;
+    --tertiary-color1: #fff20d;
+    --tertiary-color2: #bf2a1d;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.body{
+    background-color: var(--light-color);
+    font-family: karla;
+    font-size: 1.2rem;
+    line-height: 1.8rem;
+}
+
+.a{
+    text-decoration: none;
+    color: #1b1b1b;
+}
+
+.mx-auto{
+    margin: 0 auto;
+}
+
+.px-main{
+    padding: 0 20rem;
+}
+
+.heading-h2{
+    font-weight: 500;
+    padding: .5rem 0;
+    margin: 1.5rem auto;
+    border-bottom: 3px solid var(--primary-color);
+    width: fit-content;
+}
+
+.white{
+    color: #ffffff;
+}
+
+/* HEADER */
+
+.nav-main{
+    position:fixed;
+    top: 0;
+    width: 100%;
+    height: 60px;
+    background-color: #fff;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap
+    ;
+    z-index: 1000;
+}
+
+.header-logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 0 0 2rem;
+}
+
+.btn-toggle-nav{
+    width: 60px;
+    height: 100%;
+    background-color: var(--secondary-color);
+    display: grid;
+    place-content: center;
+    cursor: pointer;
+    visibility: hidden;
+}
+
+.btn-toggle-nav:hover{
+    opacity: 0.7;
+}
+
+.nav-main ul {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 1rem;
+}
+
+.nav-main ul li{
+    list-style: none;
+    line-height: 60px;
+}
+
+.nav-main ul li a{
+    display: block;
+    height: 100%;
+    padding: 0 10px;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #111;
+
+    transition: all;
+    transition-duration: .1s;
+    transition-timing-function: linear;
+}
+
+.nav-main ul li a:hover{
+    color: var(--tertiary-color2);
+    font-size: 1.3rem;
+}
+
+/* SIDEBAR */
+
+.nav-sidebar{
+    position: fixed;
+    left: -10px;
+    bottom: 0;
+    width: 0;
+    height: calc(100vh - 60px);
+    padding: 0 5px;
+    background-color: #1b1b1b;
+    z-index: 1000;
+    transition: all;
+    transition-duration: .3s;
+    transition-timing-function: ease-in-out;
+}
+
+.nav-sidebar ul{
+    padding-top: 15px;
+    overflow: hidden;
+    visibility: hidden;
+}
+
+.nav-sidebar ul li{
+    line-height: 60px;
+    list-style: none;
+}
+
+.nav-sidebar ul li span, .nav-sidebar ul li a{
+    display: block;
+    height: 60px;
+    padding: 0 10px;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #fff;
+    white-space: nowrap;
+    opacity: 0;
+}
+
+.nav-sidebar ul li a:hover{
+    background-color: #222;
+}
+
+/* MAIN */
+
+.maximum-size {
+    width: 100%;
+    max-width: 1024px;
+}
+.footer-style {
+    display: flex;
+    justify-content: space-between;
+    margin:auto;
+}
+.container-footer {
+    margin: 15px 0;
+    display: flex;
+    flex-direction: column;
+}
+.footer-grouping {
+    margin: 10px;
+    display: flex;
+    margin: 5px;
+}
+footer {
+    width: 100%;
+    margin-top: 32px;
+    background-color: #7B68EE;
+}
+
+.container-footer h2 {
+    color: #fafafa;
+    margin-bottom: 15px;
+    font-size: 2.0rem;
+}
+
+
