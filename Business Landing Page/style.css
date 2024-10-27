@@ -193,7 +193,6 @@ a{
 .services-scroll{
     display: flex;
     overflow-x: scroll;
-    margin: 2rem 0 0 0;
 }
 
 .services-scroll-content{
@@ -202,7 +201,44 @@ a{
     margin: 0 1rem;
     text-align: center;
     background: linear-gradient(to bottom right, rgb(146, 144, 144), rgb(20, 0, 0));
+    position: relative;
+}
 
+.services-scroll-content:nth-child(1)::after{
+    position: absolute;
+    content: 'Flight Booking';
+    color: #f4f4f4;
+    bottom: 1.5rem;
+    left: 2rem;
+    text-shadow: 2px 2px 2px #1b1b1b;
+}
+
+.services-scroll-content:nth-child(2)::after{
+    position: absolute;
+    content: 'Hotel Booking';
+    color: #f4f4f4;
+    bottom: 1.5rem;
+    left: 2rem;
+    text-shadow: 2px 2px 2px #1b1b1b;
+}
+
+.services-scroll-content:nth-child(3)::after{
+    position: absolute;
+    content: 'Visa Processing';
+    color: #f4f4f4;
+    bottom: 1.5rem;
+    left: 2rem;
+    text-shadow: 2px 2px 2px #1b1b1b;
+}
+
+.services-scroll-content:nth-child(4)::after{
+    position: absolute;
+    content: 'Local and International tours';
+    color: #f4f4f4;
+    bottom: 1.5rem;
+    left: 2rem;
+    right: 2rem;
+    text-shadow: 2px 2px 2px #1b1b1b;
 }
 
 .cont{
@@ -225,6 +261,7 @@ a{
 .blanks{
     min-height: 15rem;
     background: linear-gradient(to bottom right, rgb(197, 110, 110), rgb(20, 0, 0));
+    font-size: 2.5rem;
 
     transition: all;
     transition-duration: .1s;
@@ -237,14 +274,44 @@ a{
 
 .blanks:nth-child(1){
     grid-area: one;
+    position: relative;
 }
 
 .blanks:nth-child(2){
     grid-area: two;
+    position: relative;
 }
 
 .blanks:nth-child(3){
     grid-area: three;
+    position: relative;
+}
+
+.blanks:nth-child(1)::after{
+    position: absolute;
+    content: 'Seychelles';
+    color: #f4f4f4;
+    bottom: 1.5rem;
+    left: 2rem;
+    text-shadow: 2px 2px 2px #1b1b1b;
+}
+
+.blanks:nth-child(2)::after{
+    position: absolute;
+    content: 'Malta';
+    color: #f4f4f4;
+    bottom: 1.5rem;
+    left: 2rem;
+    text-shadow: 2px 2px 2px #1b1b1b;
+}
+
+.blanks:nth-child(3)::after{
+    position: absolute;
+    content: 'Namibia';
+    color: #f4f4f4;
+    bottom: 1.5rem;
+    left: 2rem;
+    text-shadow: 2px 2px 2px #1b1b1b;
 }
 
 .blank-cont{

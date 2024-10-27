@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="places.css">
+    <script src="main.js"></script>
+    <title>Wanderlust Tours & Travels</title>
+</head>
+
+<body>
+    <!-- HEADER -->
+
+    <header>
+        <nav class="nav-main">
+            <div class="header-logo"><a href="/Business Landing Page/index.html"><img
+                        src="https://res.cloudinary.com/dyqcnya5b/image/upload/v1729842417/Asset_6_mmzkii.png"
+                        alt="Logo" width="120px"></a></div>
+            <ul>
+                <li><a href="/Business Landing Page/index.html">Home</a></li>
+                <li><a href="/Business Landing Page/about.html">About Us</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="https://kassynova.github.io/Project-Wanderlust/">Contact Us</a></li>
+            </ul>
+            <div class="btn-toggle-nav" onclick="toggleNav()"><i class="fa-solid fa-bars fa-2x"></i></div>
+        </nav>
+    </header>
+
+    <!-- SIDEBAR  -->
+
+    <aside class="nav-sidebar">
+        <nav>
+            <ul>
+                <li><a href="/Business Landing Page/index.html">Home</a></li>
+                <li><a href="/Business Landing Page/about.html">About Us</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="https://kassynova.github.io/Project-Wanderlust/">Contact Us</a></li>
+            </ul>
+        </nav>
+    </aside>
+
+    <!-- MAIN -->
+
+    <div id="container">
+        <div class="spots">
+            <div class="px-main"><img src="https://media.timeout.com/images/106009174/750/422/image.webp" alt="western australia img" width="100%"></div>
+            <h2 class="bold">Western Australia</h2>
+            <p class="describe px-main">Western Australia is celebrated for its breathtaking landscapes, ranging from pristine beaches to rugged outback terrain. Its vast coastline features iconic spots like Cable Beach, known for its stunning sunsets and camel rides while the Ningaloo Reef offers spectacular snorkeling and diving experiences. The region is home to unique natural wonders, including the renowned Bungle Bungles and the stunning Pinnacles Desert. Additionally, Western Australia boasts a rich Indigenous heritage, with vibrant art and cultural experiences. The states flourishing wine regions, particularly in Margaret River, further enhance its appeal, making Western Australia a beautiful and diverse destination worth exploring.</p>
+        </div>
+    </div>
+    </div>
+
+
+    <section class="px-main">
+        <div class="container">
+            <div class="area-form">
+                <h3 class="sub-form">SEND YOUR ENQUIRY VIA THE FORM BELOW</h3>
+                <form id="form">
+                    <div>
+                        <label for="name">Nome:</label>
+                        <input type="text" class="topo-form" id="name" name="name" placeholder="FULL NAME" />
+                        <span id="name-error"></span>
+                    </div>
+                    <div>
+                        <label for="email">Email:</label>
+                        <input type="email" class="topo-form" id="email" name="email" placeholder="EMAIL ADDRESS" />
+                        <span id="email-error"></span>
+                    </div>
+                    <div>
+                        <label for="cell-phone">Celular:</label>
+                        <input type="tel" class="topo-form" id="cell-phone" pattern="\([0-9]{2}\) [0-9]{5}-[0-9]{4}"
+                            name="cell-phone" placeholder="(xx) xxxxx-xxxx (optional)" />
+                    </div>
+                    <div class="container-grouping-route">
+                        <div class="grouping">
+                            <label for="departure-date">DEPARTURE DATE</label>
+                            <input type="date" id="departure-date" class="topo-form" name="match" required />
+                            <div><span class="departure-err"></span></div>
+                        </div>
+                        <div class="grouping">
+                            <label for="return-date">RETURNING DATE</label>
+                            <input type="date" id="return-date" class="topo-form" name="arrival" required />
+                            <div><span class="returnDay-err"></span></div>
+                        </div>
+                    </div>
+                    <div class="container-grouping-route">
+                        <div class="grouping">
+                            <label for="origin">Origin</label>
+                            <select class="select" name="origin" id="origin" required>
+                                <option selected>NIGERIA</option>
+                                <option value="FRANCE">FRANCE</option>
+                                <option value="CA">CANADA</option>
+                                <option value="OG">OGUN</option>
+                                <option value="OS">OSUN</option>
+                                <option value="LA">LAGOS</option>
+                            </select>
+                            <span id="origin-error"></span>
+                        </div>
+                        <div class="grouping">
+                            <label for="destiny">destination</label>
+                            <select class="select" name="destiny" id="destiny" required>
+                                <option selected>SEYCHELLES</option>
+                                <option value="AM">HAITI</option>
+                                <option value="RJ">SLOVENIA</option>
+                                <option value="SP">WESTERN AUSTRALIA</option>
+
+                            </select>
+                            <span id="destiny-error"></span>
+                        </div>
+                    </div>
+                    <label>GENDER</label>
+                    <div class="category">
+                        <div>
+                            <input type="radio" class="checkmark" name="infantil" value="s">
+                            <label for="cama-sim"><small>MALE</small></label>
+                        </div>
+                        <div>
+                            <input type="radio" class="checkmark" name="infantil" value="n" checked>
+                            <label for="cama-nao"><small>FEMALE</small></label>
+                        </div>
+                    </div>
+                    <label>CLICK THE PREFERED PACKAGE YOU LIKE TO ADD</label>
+                    <div class="category">
+
+                        <div class="d-flex mark">
+                            <input type="checkbox" id="checkbox-wifi" class="checkmark" name="preferencias[]"
+                                value="wifi">
+                            <label for="checkbox-wifi"><small>Wifi</small></label>
+                        </div>
+
+                        <div class="d-flex mark">
+                            <input type="checkbox" id="checkbox-suite" class="checkmark" name="preferencias[]"
+                                value="suite">
+                            <label for="checkbox-suite"><small>Suite</small></label>
+                        </div>
+                    </div>
+
+                    <button type="submit">SUBMIT</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+
+    <footer>
+        <div class="footer-flex">
+            <div>
+                <img src="https://res.cloudinary.com/dyqcnya5b/image/upload/v1729842417/Asset_6_mmzkii.png" alt=""
+                    width="150px">
+                <p><i class="fa-solid fa-phone"></i> Phone: +234-908-765-4321</p>
+                <p><i class="fa-regular fa-envelope fa-1x"></i> info@wanderlust.com, wanderlust@gmail</p>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="/Business Landing Page/about.html">About Us</a></li>
+                    <li><a href="https://kassynova.github.io/Project-Wanderlust/">Contact Us</a></li>
+                    <li><a href="#">Affiliate Programs</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Reviews</a></li>
+                </ul>
+            </nav>
+            <nav>
+                <ul class="social-icons">
+                    <li><a href="#"><i class="fa-brands fa-facebook fab"></i></a></li>
+                    <li><a href="#"><i class="fa-brands fa-instagram fab"></i></a></li>
+                    <li><a href="#"><i class="fa-brands fa-twitter fab"></i></a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="rights-shi">
+            <p>&copy; copyright 2024 Wanderlust. All rights reserved | Developed by Team 4 Web3bridge</p>
+        </div>
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="placesjuwon.css">
+    <script src="main.js"></script>
+    <title>Wanderlust Tours & Travels</title>
+</head>
+
+<body>
+    <!-- HEADER -->
+
+    <header>
+        <nav class="nav-main">
+            <div class="header-logo"><a href="/Business Landing Page/index.html"><img
+                        src="https://res.cloudinary.com/dyqcnya5b/image/upload/v1729842417/Asset_6_mmzkii.png"
+                        alt="Logo" width="120px"></a></div>
+            <ul>
+                <li><a href="/Business Landing Page/index.html">Home</a></li>
+                <li><a href="/Business Landing Page/about.html">About Us</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="https://kassynova.github.io/Project-Wanderlust/">Contact Us</a></li>
+            </ul>
+            <div class="btn-toggle-nav" onclick="toggleNav()"><i class="fa-solid fa-bars fa-2x"></i></div>
+        </nav>
+    </header>
+
+    <!-- SIDEBAR  -->
+
+    <aside class="nav-sidebar">
+        <nav>
+            <ul>
+                <li><a href="/Business Landing Page/index.html">Home</a></li>
+                <li><a href="/Business Landing Page/about.html">About Us</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="https://kassynova.github.io/Project-Wanderlust/">Contact Us</a></li>
+            </ul>
+        </nav>
+    </aside>
+
+    <!-- MAIN -->
+
+    <div class="content px-main">
+        <div class="img-wrap"><img
+                src="https://media.cntraveler.com/photos/5ad78af5ee0a5d5848de62ca/master/w_2560%2Cc_limit/Pool%2520Sunset.jpg"
+                alt="picture of bora bora" width="100%"></div>
+        <h1>Overview:</h1>
+
+        <p>Bora Bora is a small South Pacific island in the society Islands archipelago, renowned for its:</p>
+        <ol>
+            <li>Crystal-clear turquoise lagoon</li>
+            <li>Overwater bungalows</li>
+            <li>Stunning white-sand beaches</li>
+            <li>Coral reef diving and snorkeiling</li>
+            <li>Luxurious resorts</li>
+        </ol>
+        <h2>Must-Visit Attractions: </h2>
+        <ul>
+            <li>Matira Beach: A picturesque public beach with calm waters</li>
+            <li>Mount Pahia: Hike to the summit for breathtaking views</li>
+            <li>InterContinental Resort's Sea Turtle Sanctuary</li>
+            <li>Ancient Temple of Marae Taputapuatea</li>
+        </ul>
+        <h2>Things to do</h2>
+        <ul>
+            <li>Snorkeling and diving</li>
+            <li>Sunset cruises, Island hopping </li>
+            <li>Shark and ray feeding</li>
+            <li>4WD safari tours, Helicopter tours</li>
+            <li>Water sports (jet-skiing, parasailing, kayaking)</li>
+        </ul>
+        <!-- fun fact -->
+        <div class="fun">
+            <h2> Fun Facts:</h2>
+            <ul>
+                <li>Bora Bora is a popular honeymoon destination</li>
+                <li>The island's iconic overwater bungalows were invented here</li>
+            </ul>
+        </div>
+
+        <!-- for the forms -->
+
+        <div class="f">
+            <form>
+                <h3>Send your enquiry via the form below</h3>
+                <br>
+
+                <input type="text" placeholder="Enter your Name *" id="name">
+                <input type="email" placeholder="Enter Your Email" id="email">
+
+                <select id="Country" placeholder="Choose a Country">
+                    <option value="dissable selected hidden">Choose a Country</option>
+                    <option value="usa">Rwanda</option>
+                    <option value="canada">Tanzania</option>
+                    <option value="Nigeria">Nigeria</option>
+                    <option value="South Africa">South Africa</option>
+                    <option value="Zimbawe">Zimbawe</option>
+                    <option value="Ethopia">Ethopia</option>
+                    <option value="Uganda">Uganda</option>
+                    <option value="Ghana">Ghana</option>
+                    <option value="Malawi">Malawi</option>
+                    <option value="Republic of congo">Republic of Congo</option>
+                    <option value="Cameroon">Cameroon</option>
+                    <option value="Bene-Republic">Bene-Republic</option>
+                </select>
+
+                <input type="number" placeholder="Contact Number" id="number">
+                <input type="number" placeholder="Number of Adult" id="adult">
+                <input type="number" placeholder="Number of Children" id="children">
+
+                <textarea rows="4" id="Message" placeholder="Enquiry Subject" id="message"></textarea>
+                <textarea rows="4" id="Messages" placeholder="Enter Your message" name="message"></textarea>
+
+                <div class="check-flex">
+                    <input type="checkbox" name="consent">
+                    <label for="consent" id="consent"><small>I agree to be contacted by Wanderlust team*</small></label>
+                </div><br>
+
+                <button type="submit">Send Email</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- FOOTER -->
+
+    <footer>
+        <div class="footer-flex">
+            <div>
+                <img src="https://res.cloudinary.com/dyqcnya5b/image/upload/v1729842417/Asset_6_mmzkii.png" alt="" width="150px">
+                <p><i class="fa-solid fa-phone"></i> Phone: +234-908-765-4321</p>
+                <p><i class="fa-regular fa-envelope fa-1x"></i> info@wanderlust.com, wanderlust@gmail</p>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="/Business Landing Page/about.css">About Us</a></li>
+                    <li><a href="https://kassynova.github.io/Project-Wanderlust/">Contact Us</a></li>
+                    <li><a href="#">Affiliate Programs</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Reviews</a></li>
+                </ul>
+            </nav>
+            <nav>
+                <ul class="social-icons">
+                    <li><a href="#"><i class="fa-brands fa-facebook fab"></i></a></li>
+                    <li><a href="#"><i class="fa-brands fa-instagram fab"></i></a></li>
+                    <li><a href="#"><i class="fa-brands fa-twitter fab"></i></a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="rights-shi">
+            <p>&copy; copyright 2024 Wanderlust. All rights reserved | Developed by Team 4 Web3bridge</p>
+        </div>
+    </footer>
+</body>
+
+</html>
