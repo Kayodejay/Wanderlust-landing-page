@@ -4,12 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact Form</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="contact.css">
+    <script src="contact.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
 
 <!-- HEADER -->
+
 
 <header>
     <nav class="nav-main">
@@ -49,18 +51,18 @@
     <p> Your satisfaction is our priority, tell us more on what you want your holidays and trip to be like!😊</p>
     <form>
      
-      <input class="contact-input"  type="text" placeholder="First Name">
+      <input class="contact-input"  type="text" placeholder="First Name" required>
       <br>
       
-      <input  class="contact-input" type="text" placeholder="Last Name">
+      <input  class="contact-input" type="text" placeholder="Last Name" required>
       <br>
      
-      <input  class="contact-input" type="email" placeholder="Enter your email address">
+      <input  class="contact-input" type="email" placeholder="Enter your email address" required>
       <br>
      
-      <textarea name="" id="" class="contact-inputs">Talk to us...</textarea>
+      <textarea name="" id="" class="contact-inputs" required>Talk to us...</textarea>
       <br>
-      <input type="checkbox" name="consent" id="" class="consent">
+      <input type="checkbox" name="consent" id="" class="consent" required >
       <label for="checkbox"> I consent to being contacted by the Wanderlust team.</label>
       <br>
       <button>Submit</button>
