@@ -16,7 +16,7 @@
 
 body{
     background-color: var(--light-color);
-    font-family: jost;
+    font-family: jost, karla;
     font-size: 1.2rem;
     line-height: 1.8rem;
 }

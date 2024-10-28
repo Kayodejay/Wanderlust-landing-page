@@ -2,6 +2,7 @@
 <html lang="en">
 
 <head>
+    <link rel="shortcut icon" href="Logo Assets/Logo Assets/Asset 2.png" type="image/x-icon">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
@@ -60,18 +61,18 @@
                 <form id="form">
                     <div>
                         <label for="name">Nome:</label>
-                        <input type="text" class="topo-form" id="name" name="name" placeholder="FULL NAME" />
+                        <input type="text" class="topo-form" id="name" name="name" placeholder="FULL NAME" required/>
                         <span id="name-error"></span>
                     </div>
                     <div>
                         <label for="email">Email:</label>
-                        <input type="email" class="topo-form" id="email" name="email" placeholder="EMAIL ADRESS" />
+                        <input type="email" class="topo-form" id="email" name="email" placeholder="EMAIL ADDRESS" required/>
                         <span id="email-error"></span>
                     </div>
                     <div>
                         <label for="cell-phone">Celular:</label>
                         <input type="tel" class="topo-form" id="cell-phone" pattern="\([0-9]{2}\) [0-9]{5}-[0-9]{4}"
-                            name="cell-phone" placeholder="(xx) xxxxx-xxxx (optional)" />
+                            name="cell-phone" placeholder="(xx) xxxxx-xxxx (optional)" required/>
                     </div>
                     <div class="container-grouping-route">
                         <div class="grouping">
@@ -117,7 +118,7 @@
                             <label for="cama-sim">MALE</label>
                         </div>
                         <div>
-                            <input type="radio" class="checkmark" name="infantil" value="n" checked>
+                            <input type="radio" class="checkmark" name="infantil" value="n">
                             <label for="cama-nao">FEMALE</label>
                         </div>
                     </div>

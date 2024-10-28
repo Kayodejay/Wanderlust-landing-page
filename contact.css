@@ -223,6 +223,10 @@ h2{
     border: 2px solid var(--secondary-color);
 }
 
+input[type=checkbox]{
+    accent-color: var(--primary-color);
+}
+
 button{
     width: 100px;
     height: 40px;

@@ -2,14 +2,15 @@
 <html lang="en">
 
 <head>
+    <link rel="shortcut icon" href="Logo Assets/Logo Assets/Asset 2.png" type="image/x-icon">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Form</title>
     <link rel="stylesheet" href="contact.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
         integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <script src="main.js"></script>
+    <title>Wanderlust | Contact Form</title>
 </head>
 
 <body>
@@ -57,21 +58,21 @@
             </p>
             <form>
 
-                <input class="contact-input" type="text" placeholder="First Name" required>
+                <input class="contact-input" id="firstname" type="text" placeholder="First Name" >
                 <br>
 
-                <input class="contact-input" type="text" placeholder="Last Name" required>
+                <input class="contact-input" id="lastname" type="text" placeholder="Last Name"  >
                 <br>
 
-                <input class="contact-input" type="email" placeholder="Enter your email address" required>
+                <input class="contact-input" id="emailaddress" type="email" placeholder="Enter your email address"  >
                 <br>
 
-                <textarea name="" id="" class="contact-inputs" placeholder="Talk to Us..." required></textarea>
+                <textarea name="" id="message" class="contact-inputs" placeholder="Talk to Us..." ></textarea>
                 <br>
-                <input type="checkbox" name="consent" id="" class="consent" required>
+                <input type="checkbox" name="consent" id="checkbox" class="consent" checked>
                 <label for="checkbox"> I consent to being contacted by the Wanderlust team.</label>
                 <br>
-                <button>Submit</button>
+                <button type="button" onclick="validateForm()">Submit</button>
 
             </form>
         </section>

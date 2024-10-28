@@ -2,6 +2,7 @@
 <html lang="en">
 
 <head>
+    <link rel="shortcut icon" href="Logo Assets/Logo Assets/Asset 2.png" type="image/x-icon">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
@@ -9,7 +10,7 @@
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="placesjuwon.css">
     <script src="../main.js"></script>
-    <title>Wanderlust Tours & Travels</title>
+    <title>Wanderlust Tours & Travels | Namibia</title>
 </head>
 
 <body>
@@ -110,15 +111,15 @@
                 <input type="number" placeholder="Number of Adult" id="adult">
                 <input type="number" placeholder="Number of Children" id="children">
 
-                <textarea rows="4" id="Message" placeholder="Enquiry Subject" id="message"></textarea>
-                <textarea rows="4" id="Messages" placeholder="Enter Your message" name="message"></textarea>
+                <textarea rows="4" id="message" placeholder="Enquiry Subject"></textarea>
+                <textarea rows="4" id="enquiry" placeholder="Enter Your message" name="message"></textarea>
 
                 <div class="check-flex">
-                    <input type="checkbox" name="consent">
-                    <label for="consent" id="consent"><small>I agree to be contacted by Wanderlust team*</small></label>
+                    <input type="checkbox" id="consent" name="consent" checked>
+                    <label for="consent"><small>I agree to be contacted by Wanderlust team*</small></label>
                 </div><br>
 
-                <button type="submit">Send Email</button>
+                <button type="submit" onclick="validateEnquiryForm()">Send Email</button>
             </form>
         </div>
     </div>
